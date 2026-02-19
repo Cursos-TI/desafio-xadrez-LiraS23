@@ -41,5 +41,27 @@ int main() {
         passosRainha++;
     } while (passosRainha < MOVIMENTO_RAINHA);
 
+    // --- Nível Aventureiro: Movimentação do Cavalo ---
+    // Movimento: em 'L' (Baixo e Esquerda).
+    // Requisito: Utilizar loops aninhados (for e while).
+    printf("\n--- Movimentacao do Cavalo ---\n");
+
+    // Loop externo (for) controla a execução do movimento completo
+    for (int i = 0; i < 1; i++) {
+        int passosVertical = 0;
+        // Loop interno (while) para o movimento vertical (Baixo)
+        while (passosVertical < 2) {
+            printf("Baixo\n");
+            passosVertical++;
+        }
+
+        int passosHorizontal = 0;
+        // Loop interno (while) para o movimento horizontal (Esquerda)
+        while (passosHorizontal < 1) {
+            printf("Esquerda\n");
+            passosHorizontal++;
+        }
+    }
+
     return 0;
 }
